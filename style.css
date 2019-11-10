@@ -1,0 +1,47 @@
+.nav{
+            width: 100%;     
+            background-color: whitesmoke; 
+            height: 50px;
+        }
+        .navbar{
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            align-items: center;
+
+        }
+        .nav-item{
+            list-style: none;
+            height: 50px;
+            display: inline-flex;
+        }
+        .nav-item a{
+            color: #000;
+            text-decoration: none;
+            align-self: center;
+        }
+        .drop-menu{
+            background-color: whitesmoke;
+            list-style: none;
+            position: absolute;
+            margin-top: 50px;
+           
+            overflow: hidden;
+            max-height: 0;  
+            transition: max-height 0.15s ease-out;
+        }
+        .dropdown:hover>.drop-menu{
+            
+            max-height: 500px;
+            transition: max-height .30s ease-in;
+        }
+        .drop-item{
+            
+            font-size: 20px;
+            padding: 10px 0;
+            padding-right: 5px;
+        }
+        .drop-item:hover{
+            background-color: bisque;
+        }
